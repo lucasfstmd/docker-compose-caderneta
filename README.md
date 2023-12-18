@@ -25,4 +25,4 @@ Make sure you have Docker installed on your machine. Then, run the following com
 ### `docker-compose up -d`
 
 This command will launch the application in development mode. 
-You can access it at https://localhost in your web-app and https://localhost:8080.
+You can access it at https://localhost in your web-app and https://localhost:8080 to backend.
