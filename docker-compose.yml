@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  back-end:
+    container_name: caderneta-backend
+    build:
+      context: ./BackEnd-Caderneta
+      dockerfile: Dockerfile
+    networks:
+      - caderneta-network
+    ports:
+      - "8080:8080"
+
+  front-end:
+    container_name: caderneta-frontend
+    build:
+      context: ./FrontEnd-Caderneta
+      dockerfile: Dockerfile
+    networks:
+      - caderneta-network
+    ports:
+      - "80:80"
+      - "443:443"
+
+networks:
+  caderneta-network:
+    name: caderneta-network
+    driver: bridge
