@@ -32,6 +32,12 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "3306:3306"
+    networks:
+      - caderneta-network
+
+volumes:
+  caderneta-mysql-data:
+    name: caderneta-mysql
 
 networks:
   caderneta-network:
