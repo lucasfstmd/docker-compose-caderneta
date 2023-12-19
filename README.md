@@ -14,7 +14,7 @@ Make sure you have Docker installed on your machine. Then, run the following com
 
 ### `docker-compose up -d`
 
-### Step 2: Import Dump to MySQL Database
+### Step 3: Import Dump to MySQL Database
 
 Import the database dump to your MySQL service. Replace your-dump-file.sql with the actual dump file name.
 
