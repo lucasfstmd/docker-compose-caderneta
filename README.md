@@ -8,7 +8,13 @@
 
 ### `cd caderneta`
 
-### Step 2: Import Dump to MySQL Database
+### Step 2: Run Docker Compose
+
+Make sure you have Docker installed on your machine. Then, run the following command to start the application using Docker Compose.
+
+### `docker-compose up -d`
+
+### Step 3: Import Dump to MySQL Database
 
 Import the database dump to your MySQL service. Replace your-dump-file.sql with the actual dump file name.
 
@@ -18,9 +24,9 @@ Import the database dump to your MySQL service. Replace your-dump-file.sql with 
 
 You will be prompted to enter your MySQL password.
 
-### Step 3: Run Docker Compose
+### Step 4: Run Docker Compose
 
-Make sure you have Docker installed on your machine. Then, run the following command to start the application using Docker Compose.
+After performing the Dump for MySQL you must build docker compose
 
 ### `docker-compose up -d`
 
