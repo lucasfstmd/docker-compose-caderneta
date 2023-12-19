@@ -1,6 +1,8 @@
 [submodule "FrontEnd-Caderneta"]
 	path = FrontEnd-Caderneta
 	url = https://github.com/lucasfstmd/FrontEnd-Caderneta
+	branch = main
 [submodule "BackEnd-Caderneta"]
 	path = BackEnd-Caderneta
 	url = https://github.com/lucasfstmd/BackEnd-Caderneta
+	branch = main
