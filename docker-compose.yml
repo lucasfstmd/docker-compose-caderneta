@@ -2,6 +2,7 @@ version: "3.8"
 services:
   back-end:
     container_name: caderneta-backend
+    restart: always
     build:
       context: ./BackEnd-Caderneta
       dockerfile: Dockerfile
@@ -12,6 +13,7 @@ services:
 
   front-end:
     container_name: caderneta-frontend
+    restart: always
     build:
       context: ./FrontEnd-Caderneta
       dockerfile: Dockerfile
