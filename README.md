@@ -4,7 +4,7 @@
 
 ### Step 1: Clone the Repository
 
-### `git clone https://github.com/lucasfstmd/docker-compose-caderneta`
+### `git clone https://github.com/lucasfstmd/docker-compose-caderneta.git`
 
 ### `cd caderneta`
 
