@@ -3,6 +3,15 @@ services:
   back-end:
     container_name: caderneta-backend
     restart: always
+    environment:
+      PORT: ${PORT}
+      NODE_ENV: ${NODE_ENV}
+      DATABASE_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      DATABASE_DEFAULT_SCHEMA: ${MYSQL_DATABASE}
+      DATABASE_USER: ${MYSQL_USER}
+      DATABASE_PASSWORD: ${MYSQL_PASSWORD}
+      DATABASE_HOST: ${DATABASE_HOST}
+      DATABASE_PORT: ${DATABASE_PORT}
     build:
       context: ./BackEnd-Caderneta
       dockerfile: Dockerfile
@@ -14,6 +23,10 @@ services:
   front-end:
     container_name: caderneta-frontend
     restart: always
+    environment:
+      REACT_APP_API_GATEWAY: ${REACT_APP_API_GATEWAY}
+      SSL_KEY_PATH: ${SSL_KEY_PATH}
+      SSL_CERT_PATH: ${SSL_CERT_PATH}
     build:
       context: ./FrontEnd-Caderneta
       dockerfile: Dockerfile

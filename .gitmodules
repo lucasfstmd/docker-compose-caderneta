@@ -5,4 +5,4 @@
 [submodule "BackEnd-Caderneta"]
 	path = BackEnd-Caderneta
 	url = https://github.com/lucasfstmd/BackEnd-Caderneta
-	branch = main
+	branch = master
