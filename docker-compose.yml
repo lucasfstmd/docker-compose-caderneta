@@ -51,8 +51,8 @@ services:
         max-size: 100m
 
   db:
-    image: mysql:8.0
-    command: --default-authentication-plugin=mysql_native_password
+    container_name: caderneta-mysql
+    image: mysql/mysql-server
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -65,7 +65,7 @@ services:
       - caderneta-network
 
 volumes:
-  caderneta-mysql-data:
+  caderneta-mysql:
     name: caderneta-mysql
 
 networks:
